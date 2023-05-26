@@ -11,3 +11,6 @@ function createSquare(){
 
     return square;
 }
+
+// RECUPERO BUTTON HTML "PLAY" E LO INSERISCO IN UNA CONSTANTE
+const playButton = document.getElementById('play');
