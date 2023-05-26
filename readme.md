@@ -43,5 +43,3 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
                 - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
 
             - Appendere (append) dentro la Constante (grid) la Constante (square).
-
-
