@@ -3,3 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header{
+    height: 12vh;
+    background-color: red;
+}
+
+main{
+    height: 80vh;
+    background-color: blue;
+
+}
+
+footer{
+    height: 8vh;
+    background-color: green;
+}
