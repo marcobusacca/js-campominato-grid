@@ -18,13 +18,13 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
 - Usare il comando "document.getElementById('')" per recuperare il Button HTML "play" ed inserirlo in una Constante (playButton);
 
-- Usare il comando "document.getElementById('')" per recuperare il container HTML dove inserire la Griglia composta dagli Square, ed inserirlo in una Constante (grid);
-
 
 - Dichiarare una Variabile Contatore Click Utente (clickCounter = 0);
 
 
 - QUANDO l'utente clicca sul "playButton":
+
+    - Usare il comando "document.getElementById('')" per recuperare il container HTML dove inserire la Griglia composta dagli Square, ed inserirlo in una Constante (grid);
 
     - Incrementare Variabile "clickCounter";
 

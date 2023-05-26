@@ -66,16 +66,7 @@ main .col{
     flex-flow: row wrap;
 }
 
-main .square{
-    width: calc(800px / 10);
-    height: calc(800px / 10);
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    font-weight: 500;
-}
+
 /* FINE MAIN */
 
 /* FOOTER */
@@ -111,6 +102,23 @@ footer label{
     display: flex;
     flex-flow: row wrap;
 }
+
+/* SQUARE UTILITIES */
+.square{
+    width: calc(800px / 10);
+    height: calc(800px / 10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #fff;
+}
+
+.square_selected{
+    background-color: #7FFFD4;
+}
 /* FINE UTILITIES */
 
 /* LAYOUT RESPONSIVE */
@@ -122,7 +130,7 @@ footer label{
                 height: 650px;
             }
             
-            main .square{
+            .square{
                 width: calc(650px / 10);
                 height: calc(650px / 10);
             }
@@ -134,7 +142,7 @@ footer label{
                 height: 500px;
             }
             
-            main .square{
+            .square{
                 width: calc(500px / 10);
                 height: calc(500px / 10);
             }
