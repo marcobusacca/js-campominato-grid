@@ -12,6 +12,7 @@ function createSquare(){
     return square;
 }
 
+
 // RECUPERO BUTTON HTML "PLAY" E LO INSERISCO IN UNA CONSTANTE
 const playButton = document.getElementById('play');
 
@@ -20,3 +21,11 @@ const grid = document.getElementById('grid');
 
 // VARIABILE CONTATORE CLICK UTENTE
 let clickCounter = 0;
+
+
+// L'UTENTE CLICCA SUL "PLAY_BUTTON"
+playButton.addEventListener("click", function(){
+
+    // INCREMENTO VARIABILE CONTATORE CLICK UTENTE
+    clickCounter++;
+})
