@@ -17,3 +17,6 @@ const playButton = document.getElementById('play');
 
 // RECUPERO CONTAINER HTML "GRID" E LO INSERISCO IN UNA CONSTANTE
 const grid = document.getElementById('grid');
+
+// VARIABILE CONTATORE CLICK UTENTE
+let clickCounter = 0;
