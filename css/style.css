@@ -10,7 +10,7 @@ body{
 
 /* HEADER */
     header{
-        height: 10vh;
+        height: 100px;
         background-color: #fff;
     }
 
@@ -49,7 +49,7 @@ body{
 
 /* MAIN */
     main{
-        height: 83vh;
+        height: calc(100vh - 180px);
         background-color: #7FFFD4;
         overflow-y: auto;
     }
@@ -69,7 +69,7 @@ body{
 
 /* FOOTER */
     footer{
-        height: 7vh;
+        height: 80px;
         background-color: #fff;
     }
 
@@ -143,6 +143,20 @@ body{
             .square{
                 width: calc(500px / 10);
                 height: calc(500px / 10);
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-height: 700px) {
+            main .col{
+                width: 400px;
+                height: 400px;
+            }
+            
+            .square{
+                width: calc(400px / 10);
+                height: calc(400px / 10);
+                font-size: 15px;
             }
         }
     /* FINE GRID HEIGHT ADJUSTMENT */
