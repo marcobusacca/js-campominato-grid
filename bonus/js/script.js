@@ -62,7 +62,8 @@ playButton.addEventListener("click", function(){
         // CONTROLLO CHE DIFFICOLTA HA SCELTO L'UTENTE
         switch (difficult){
             
-            case 1: // L'utente ha scelto Difficoltà Easy
+            case 1: // L'UTENTE HA SCELTO DIFFICOLTA EASY
+
                 // CONSTANTE CHE IDENTIFICA LA SIZE MASSIMA DELLA GRIGLIA
                 const gridEasySize = 100;
 
@@ -87,7 +88,7 @@ playButton.addEventListener("click", function(){
                 }
             break;
 
-            case 2: // L'utente ha scelto Difficoltà Medium
+            case 2: // L'UTENTE HA SCELTO DIFFICOLTA MEDIUM
 
                 // CONSTANTE CHE IDENTIFICA LA SIZE MASSIMA DELLA GRIGLIA
                 const gridMediumSize = 81;
@@ -113,7 +114,7 @@ playButton.addEventListener("click", function(){
                 }
             break;
 
-            case 3: // L'utente ha scelto Difficoltà Hard
+            case 3: // L'UTENTE HA SCELTO DIFFICOLTA HARD
 
                 // CONSTANTE CHE IDENTIFICA LA SIZE MASSIMA DELLA GRIGLIA
                 const gridHardSize = 49;
