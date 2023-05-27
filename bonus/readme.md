@@ -3,7 +3,9 @@ PROBLEMA : L'utente sceglie una Difficoltà tramite una Select e clicca su un bo
 Ogni cella ha un numero progressivo, in base alla Difficoltà che ha scelto l'utente.
 
 Difficoltà 1 => 100 caselle, con un numero compreso tra 1 e 100, divise in 10 caselle per 10 righe.
+
 Difficoltà 2 => 81 caselle, con un numero compreso tra 1 e 81, divise in 9 caselle per 9 righe.
+
 Difficoltà 3 => 49 caselle, con un numero compreso tra 1 e 49, divise in 7 caselle per 7 righe.
 
 Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
