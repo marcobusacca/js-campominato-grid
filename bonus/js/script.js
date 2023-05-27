@@ -69,7 +69,7 @@ playButton.addEventListener("click", function(){
                 // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
                 for (let i = 1; i <= gridEasySize; i++){
 
-                    // RICHIAMO LA FUNZIONE CREATE_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
+                    // RICHIAMO LA FUNZIONE CREATE_EASY_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
                     const square = createEasySquare();
 
                     // INSERISCO IL NUMERATORE DEI BLOCCHI DELLA GRIGLIA
@@ -95,7 +95,7 @@ playButton.addEventListener("click", function(){
                 // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
                 for (let i = 1; i <= gridMediumSize; i++){
 
-                    // RICHIAMO LA FUNZIONE CREATE_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
+                    // RICHIAMO LA FUNZIONE CREATE_MEDIUM_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
                     const square = createMediumSquare();
 
                     // INSERISCO IL NUMERATORE DEI BLOCCHI DELLA GRIGLIA
@@ -121,7 +121,7 @@ playButton.addEventListener("click", function(){
                 // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
                 for (let i = 1; i <= gridHardSize; i++){
 
-                    // RICHIAMO LA FUNZIONE CREATE_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
+                    // RICHIAMO LA FUNZIONE CREATE_HARD_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
                     const square = createHardSquare();
 
                     // INSERISCO IL NUMERATORE DEI BLOCCHI DELLA GRIGLIA
