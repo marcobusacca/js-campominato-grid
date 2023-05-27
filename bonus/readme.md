@@ -7,11 +7,29 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 - Creare Struttura e Stile HTML & CSS;
 
 
-- Creare una Funzione (createSquare) che genera dei Tag HTML "div":
+- Creare una Funzione (createEasySquare) che genera dei Tag HTML "div":
 
     - Usa il comando "document.createElement('div')" e inseriscilo dentro una Constante (square);
 
-    - Usa il comando "classList.add('square')", per inserire la classe 'square' alla Constante (square);
+    - Usa il comando "classList.add('')", per inserire la classe 'easy_square' alla Constante (square);
+
+    - Ritorna (return) la Constante (square);
+
+
+- Creare una Funzione (createMediumSquare) che genera dei Tag HTML "div":
+
+    - Usa il comando "document.createElement('div')" e inseriscilo dentro una Constante (square);
+
+    - Usa il comando "classList.add('')", per inserire la classe 'medium_square' alla Constante (square);
+
+    - Ritorna (return) la Constante (square);
+
+
+- Creare una Funzione (createHardSquare) che genera dei Tag HTML "div":
+
+    - Usa il comando "document.createElement('div')" e inseriscilo dentro una Constante (square);
+
+    - Usa il comando "classList.add('')", per inserire la classe 'hard_square' alla Constante (square);
 
     - Ritorna (return) la Constante (square);
 
@@ -26,20 +44,60 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
     - Usare il comando "document.getElementById('')" per recuperare il container HTML dove inserire la Griglia composta dagli Square, ed inserirlo in una Constante (grid);
 
+    - Usare il comando "document.getElementById('').value" per recuperare la select HTML dove l'utente ha scelto la Difficoltà, ed inserirla in una Constante (difficult);
+
     - Incrementare Variabile "clickCounter";
 
     - ? SE clickCounter === 1 ALLORA:
 
-        - Dichiarare una Constante che identifica la Size Massima della Griglia (gridSize = 100);
+        - ? switch (difficult):
 
-        - Creare un Ciclo FOR che scorre da 1 a (gridSize):
+            - case 1 : // L'utente ha scelto Difficoltà Easy
 
-            - Inserire dentro una Constante (square) il richiamo della Funzione (createSquare);
+                - Dichiarare una Constante che identifica la Size Massima della Griglia (gridEasySize = 100);
 
-            - Inserire (InnerText) l'Indice dentro la Constante (square);
+                - Creare un Ciclo FOR che scorre da 1 a (gridEasySize):
 
-            - QUANDO l'utente clicca nell'elemento (square):
+                    - Inserire dentro una Constante (square) il richiamo della Funzione (createEasySquare);
 
-                - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
+                    - Inserire (InnerText) l'Indice dentro la Constante (square);
 
-            - Appendere (append) dentro la Constante (grid) la Constante (square).
+                    - QUANDO l'utente clicca nell'elemento (square):
+
+                        - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
+
+                    - Appendere (append) dentro la Constante (grid) la Constante (square).
+
+
+            - case 2 : // L'utente ha scelto Difficoltà Medium
+
+                - Dichiarare una Constante che identifica la Size Massima della Griglia (gridMediumSize = 81);
+
+                - Creare un Ciclo FOR che scorre da 1 a (gridMediumSize):
+
+                    - Inserire dentro una Constante (square) il richiamo della Funzione (createMediumSquare);
+
+                    - Inserire (InnerText) l'Indice dentro la Constante (square);
+
+                    - QUANDO l'utente clicca nell'elemento (square):
+
+                        - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
+
+                    - Appendere (append) dentro la Constante (grid) la Constante (square).
+
+
+            - case 3 : // L'utente ha scelto Difficoltà Hard
+
+                - Dichiarare una Constante che identifica la Size Massima della Griglia (gridHardSize = 49);
+
+                - Creare un Ciclo FOR che scorre da 1 a (gridHardSize):
+
+                    - Inserire dentro una Constante (square) il richiamo della Funzione (createHardSquare);
+
+                    - Inserire (InnerText) l'Indice dentro la Constante (square);
+
+                    - QUANDO l'utente clicca nell'elemento (square):
+
+                        - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
+
+                    - Appendere (append) dentro la Constante (grid) la Constante (square).
