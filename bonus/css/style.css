@@ -117,21 +117,47 @@ body{
     }
 
     /* SQUARE UTILITIES */
-    .square{
-        width: calc(800px / 10);
-        height: calc(800px / 10);
-        border: 1px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 25px;
-        font-weight: 500;
-        background-color: #fff;
-    }
+        .easy_square{
+            width: calc(800px / 10);
+            height: calc(800px / 10);
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 500;
+            background-color: #fff;
+        }
 
-    .square_selected{
-        background-color: #7FFFD4;
-    }
+        .medium_square{
+            width: calc(800px / 9);
+            height: calc(800px / 9);
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 500;
+            background-color: #fff;
+        }
+
+        .hard_square{
+            width: calc(800px / 7);
+            height: calc(800px / 7);
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: 500;
+            background-color: #fff;
+        }
+
+
+        .square_selected{
+            background-color: #7FFFD4;
+        }
+    /* FINE SQUARE UTILITIES */
 /* FINE UTILITIES */
 
 /* LAYOUT RESPONSIVE */
@@ -143,9 +169,19 @@ body{
                 height: 650px;
             }
             
-            .square{
+            .easy_square{
                 width: calc(650px / 10);
                 height: calc(650px / 10);
+            }
+
+            .medium_square{
+                width: calc(650px / 9);
+                height: calc(650px / 9);
+            }
+
+            .hard_square{
+                width: calc(650px / 7);
+                height: calc(650px / 7);
             }
         }
 
@@ -155,9 +191,21 @@ body{
                 height: 500px;
             }
             
-            .square{
+            .easy_square{
                 width: calc(500px / 10);
                 height: calc(500px / 10);
+                font-size: 20px;
+            }
+
+            .medium_square{
+                width: calc(500px / 9);
+                height: calc(500px / 9);
+                font-size: 20px;
+            }
+
+            .hard_square{
+                width: calc(500px / 7);
+                height: calc(500px / 7);
                 font-size: 20px;
             }
         }
@@ -168,9 +216,21 @@ body{
                 height: 400px;
             }
             
-            .square{
+            .easy_square{
                 width: calc(400px / 10);
                 height: calc(400px / 10);
+                font-size: 15px;
+            }
+
+            .medium_square{
+                width: calc(400px / 9);
+                height: calc(400px / 9);
+                font-size: 15px;
+            }
+
+            .hard_square{
+                width: calc(400px / 7);
+                height: calc(400px / 7);
                 font-size: 15px;
             }
         }

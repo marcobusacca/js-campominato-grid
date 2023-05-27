@@ -1,13 +1,13 @@
 "use strict";
 
 // FUNZIONE CHE GENERA DEI TAG HTML "DIV" CON CLASSE "SQUARE"
-function createSquare(){
+function createEasySquare(){
 
     // CREAZIONE ELEMENTO HTML "DIV" ED INSERIMENTO DENTRO UNA CONSTANTE
     const square = document.createElement('div');
 
     // INSERIMENTO CLASSE "SQUARE" ALL'ELEMENTO "DIV"
-    square.classList.add('square');
+    square.classList.add('easy_square');
 
     return square;
 }
@@ -32,13 +32,13 @@ playButton.addEventListener("click", function(){
     if(clickCounter === 1){ // ANCHE SE L'UTENTE CLICCA PIU VOLTE, IL CICLO VIENE ESEGUITO SOLO UNA VOLTA
 
         // CONSTANTE CHE IDENTIFICA LA SIZE MASSIMA DELLA GRIGLIA
-        const gridSize = 100;
+        const easyGridSize = 100;
 
         // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
-        for (let i = 1; i <= gridSize; i++){
+        for (let i = 1; i <= easyGridSize; i++){
 
             // RICHIAMO LA FUNZIONE CREATE_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
-            const square = createSquare();
+            const square = createEasySquare();
 
             // INSERISCO IL NUMERATORE DEI BLOCCHI DELLA GRIGLIA
             square.innerText = i;
