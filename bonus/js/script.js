@@ -52,6 +52,9 @@ playButton.addEventListener("click", function(){
     // RECUPERO IL CONTAINER HTML "GRID" E LO INSERISCO IN UNA CONSTANTE
     const grid = document.getElementById('grid');
 
+    // RECUPERO IL VALORE INSERITO DALL'UTENTE TRAMITE LA DIFFICULT_SELECT HTML
+    const difficult = document.getElementById('select_difficult').value;
+
     // INCREMENTO VARIABILE CONTATORE CLICK UTENTE
     clickCounter++;
     
