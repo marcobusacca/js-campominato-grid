@@ -139,7 +139,6 @@ playButton.addEventListener("click", function(){
                 }
             break;
         }
-        
     }
 })
 
