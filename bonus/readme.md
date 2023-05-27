@@ -53,6 +53,8 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
     - Usare il comando "parseInt(document.getElementById('').value)" per recuperare la select HTML dove l'utente ha scelto la Difficoltà, ed inserirla in una Constante (difficult);
 
+    - Dichiarare una Variabile che Definisce la Grandezza Totale della Griglia (gridSize);
+
     - Incrementare Variabile "clickCounter";
 
     - ? SE clickCounter === 1 ALLORA:
@@ -61,9 +63,9 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
             - case 1 : // L'utente ha scelto Difficoltà Easy
 
-                - Dichiarare una Constante che identifica la Size Massima della Griglia (gridEasySize = 100);
+                - Assegnare la Grandezza Totale della Griglia in Difficoltà Easy (gridSize = 100);
 
-                - Creare un Ciclo FOR che scorre da 1 a (gridEasySize):
+                - Creare un Ciclo FOR che scorre da 1 a (gridSize):
 
                     - Inserire dentro una Constante (square) il richiamo della Funzione (createEasySquare);
 
@@ -80,9 +82,9 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
             - case 2 : // L'utente ha scelto Difficoltà Medium
 
-                - Dichiarare una Constante che identifica la Size Massima della Griglia (gridMediumSize = 81);
+                - Assegnare la Grandezza Totale della Griglia in Difficoltà Easy (gridSize = 81);
 
-                - Creare un Ciclo FOR che scorre da 1 a (gridMediumSize):
+                - Creare un Ciclo FOR che scorre da 1 a (gridSize):
 
                     - Inserire dentro una Constante (square) il richiamo della Funzione (createMediumSquare);
 
@@ -99,9 +101,9 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
             - case 3 : // L'utente ha scelto Difficoltà Hard
 
-                - Dichiarare una Constante che identifica la Size Massima della Griglia (gridHardSize = 49);
+                - Assegnare la Grandezza Totale della Griglia in Difficoltà Easy (gridSize = 49);
 
-                - Creare un Ciclo FOR che scorre da 1 a (gridHardSize):
+                - Creare un Ciclo FOR che scorre da 1 a (gridSize):
 
                     - Inserire dentro una Constante (square) il richiamo della Funzione (createHardSquare);
 

@@ -55,6 +55,9 @@ playButton.addEventListener("click", function(){
     // RECUPERO IL VALORE INSERITO DALL'UTENTE TRAMITE LA DIFFICULT_SELECT HTML
     const difficult = parseInt(document.getElementById('select_difficult').value);
 
+    // DICHIARO LA VARIABILE CHE DEFINISCE LA GRANDEZZA TOTALE DELLA GRIGLIA
+    let gridSize;
+
     // INCREMENTO VARIABILE CONTATORE CLICK UTENTE
     clickCounter++;
     
@@ -64,11 +67,11 @@ playButton.addEventListener("click", function(){
             
             case 1: // L'UTENTE HA SCELTO DIFFICOLTA EASY
 
-                // CONSTANTE CHE IDENTIFICA LA SIZE MASSIMA DELLA GRIGLIA
-                const gridEasySize = 100;
+                // ASSEGNO LA GRANDEZZA TOTALE DELLA GRIGLIA
+                gridSize = 100;
 
                 // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
-                for (let i = 1; i <= gridEasySize; i++){
+                for (let i = 1; i <= gridSize; i++){
 
                     // RICHIAMO LA FUNZIONE CREATE_EASY_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
                     const square = createEasySquare();
@@ -90,11 +93,11 @@ playButton.addEventListener("click", function(){
 
             case 2: // L'UTENTE HA SCELTO DIFFICOLTA MEDIUM
 
-                // CONSTANTE CHE IDENTIFICA LA SIZE MASSIMA DELLA GRIGLIA
-                const gridMediumSize = 81;
+                // ASSEGNO LA GRANDEZZA TOTALE DELLA GRIGLIA
+                gridSize = 81;
 
                 // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
-                for (let i = 1; i <= gridMediumSize; i++){
+                for (let i = 1; i <= gridSize; i++){
 
                     // RICHIAMO LA FUNZIONE CREATE_MEDIUM_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
                     const square = createMediumSquare();
@@ -116,11 +119,11 @@ playButton.addEventListener("click", function(){
 
             case 3: // L'UTENTE HA SCELTO DIFFICOLTA HARD
 
-                // CONSTANTE CHE IDENTIFICA LA SIZE MASSIMA DELLA GRIGLIA
-                const gridHardSize = 49;
+                // ASSEGNO LA GRANDEZZA TOTALE DELLA GRIGLIA
+                gridSize = 49;
 
                 // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
-                for (let i = 1; i <= gridHardSize; i++){
+                for (let i = 1; i <= gridSize; i++){
 
                     // RICHIAMO LA FUNZIONE CREATE_HARD_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
                     const square = createHardSquare();
