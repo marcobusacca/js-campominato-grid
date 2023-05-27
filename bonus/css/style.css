@@ -117,9 +117,7 @@ body{
     }
 
     /* SQUARE UTILITIES */
-        .easy_square{
-            width: calc(800px / 10);
-            height: calc(800px / 10);
+        .square{
             border: 1px solid black;
             display: flex;
             justify-content: center;
@@ -127,32 +125,22 @@ body{
             font-size: 25px;
             font-weight: 500;
             background-color: #fff;
+        }
+
+        .easy_square{
+            width: calc(800px / 10);
+            height: calc(800px / 10);
         }
 
         .medium_square{
             width: calc(800px / 9);
             height: calc(800px / 9);
-            border: 1px solid black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 25px;
-            font-weight: 500;
-            background-color: #fff;
         }
 
         .hard_square{
             width: calc(800px / 7);
             height: calc(800px / 7);
-            border: 1px solid black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 25px;
-            font-weight: 500;
-            background-color: #fff;
         }
-
 
         .square_selected{
             background-color: #7FFFD4;
@@ -190,23 +178,24 @@ body{
                 width: 500px;
                 height: 500px;
             }
+
+            .square{
+                font-size: 20px;
+            }
             
             .easy_square{
                 width: calc(500px / 10);
                 height: calc(500px / 10);
-                font-size: 20px;
             }
 
             .medium_square{
                 width: calc(500px / 9);
                 height: calc(500px / 9);
-                font-size: 20px;
             }
 
             .hard_square{
                 width: calc(500px / 7);
                 height: calc(500px / 7);
-                font-size: 20px;
             }
         }
 
@@ -215,23 +204,24 @@ body{
                 width: 400px;
                 height: 400px;
             }
-            
+
+            .square{
+                font-size: 15px;
+            }
+
             .easy_square{
                 width: calc(400px / 10);
                 height: calc(400px / 10);
-                font-size: 15px;
             }
 
             .medium_square{
                 width: calc(400px / 9);
                 height: calc(400px / 9);
-                font-size: 15px;
             }
 
             .hard_square{
                 width: calc(400px / 7);
                 height: calc(400px / 7);
-                font-size: 15px;
             }
         }
     /* FINE GRID HEIGHT ADJUSTMENT */

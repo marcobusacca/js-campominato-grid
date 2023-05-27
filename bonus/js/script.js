@@ -1,39 +1,39 @@
 "use strict";
 
-// FUNZIONE CHE GENERA DEI TAG HTML "DIV" CON CLASSE "EASY_SQUARE"
+// FUNZIONE CHE GENERA DEI TAG HTML "DIV" CON CLASSE "SQUARE" E CLASSE "EASY_SQUARE"
 function createEasySquare(){
 
     // CREAZIONE ELEMENTO HTML "DIV" ED INSERIMENTO DENTRO UNA CONSTANTE
     const square = document.createElement('div');
 
-    // INSERIMENTO CLASSE "EASY_SQUARE" ALL'ELEMENTO "DIV"
-    square.classList.add('easy_square');
+    // INSERIMENTO CLASSI ALL'ELEMENTO "DIV"
+    square.classList.add('square', 'easy_square');
 
     return square;
 }
 
 
-// FUNZIONE CHE GENERA DEI TAG HTML "DIV" CON CLASSE "MEDIUM_SQUARE"
+// FUNZIONE CHE GENERA DEI TAG HTML "DIV" CON CLASSE "SQUARE" E CLASSE "MEDIUM_SQUARE"
 function createMediumSquare(){
 
     // CREAZIONE ELEMENTO HTML "DIV" ED INSERIMENTO DENTRO UNA CONSTANTE
     const square = document.createElement('div');
 
-    // INSERIMENTO CLASSE "MEDIUM_SQUARE" ALL'ELEMENTO "DIV"
-    square.classList.add('medium_square');
+    // INSERIMENTO CLASSI ALL'ELEMENTO "DIV"
+    square.classList.add('square', 'medium_square');
 
     return square;
 }
 
 
-// FUNZIONE CHE GENERA DEI TAG HTML "DIV" CON CLASSE "HARD_SQUARE"
+// FUNZIONE CHE GENERA DEI TAG HTML "DIV" CON CLASSE "SQUARE" E CLASSE "HARD_SQUARE"
 function createHardSquare(){
 
     // CREAZIONE ELEMENTO HTML "DIV" ED INSERIMENTO DENTRO UNA CONSTANTE
     const square = document.createElement('div');
 
-    // INSERIMENTO CLASSE "HARD_SQUARE" ALL'ELEMENTO "DIV"
-    square.classList.add('hard_square');
+    // INSERIMENTO CLASSI ALL'ELEMENTO "DIV"
+    square.classList.add('square', 'hard_square');
 
     return square;
 }
