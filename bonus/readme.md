@@ -51,7 +51,7 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
     - Usare il comando "document.getElementById('')" per recuperare il container HTML dove inserire la Griglia composta dagli Square, ed inserirlo in una Constante (grid);
 
-    - Usare il comando "document.getElementById('').value" per recuperare la select HTML dove l'utente ha scelto la Difficoltà, ed inserirla in una Constante (difficult);
+    - Usare il comando "parseInt(document.getElementById('').value)" per recuperare la select HTML dove l'utente ha scelto la Difficoltà, ed inserirla in una Constante (difficult);
 
     - Incrementare Variabile "clickCounter";
 
@@ -75,6 +75,8 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
                     - Appendere (append) dentro la Constante (grid) la Constante (square).
 
+            - break;
+
 
             - case 2 : // L'utente ha scelto Difficoltà Medium
 
@@ -92,6 +94,8 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 
                     - Appendere (append) dentro la Constante (grid) la Constante (square).
 
+            - break;
+
 
             - case 3 : // L'utente ha scelto Difficoltà Hard
 
@@ -108,3 +112,5 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
                         - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
 
                     - Appendere (append) dentro la Constante (grid) la Constante (square).
+
+            - break;
