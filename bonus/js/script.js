@@ -1,12 +1,12 @@
 "use strict";
 
-// FUNZIONE CHE GENERA DEI TAG HTML "DIV" CON CLASSE "SQUARE"
+// FUNZIONE CHE GENERA DEI TAG HTML "DIV" CON CLASSE "EASY_SQUARE"
 function createEasySquare(){
 
     // CREAZIONE ELEMENTO HTML "DIV" ED INSERIMENTO DENTRO UNA CONSTANTE
     const square = document.createElement('div');
 
-    // INSERIMENTO CLASSE "SQUARE" ALL'ELEMENTO "DIV"
+    // INSERIMENTO CLASSE "EASY_SQUARE" ALL'ELEMENTO "DIV"
     square.classList.add('easy_square');
 
     return square;
