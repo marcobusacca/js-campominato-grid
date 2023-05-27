@@ -26,6 +26,19 @@ function createMediumSquare(){
 }
 
 
+// FUNZIONE CHE GENERA DEI TAG HTML "DIV" CON CLASSE "HARD_SQUARE"
+function createHardSquare(){
+
+    // CREAZIONE ELEMENTO HTML "DIV" ED INSERIMENTO DENTRO UNA CONSTANTE
+    const square = document.createElement('div');
+
+    // INSERIMENTO CLASSE "HARD_SQUARE" ALL'ELEMENTO "DIV"
+    square.classList.add('hard_square');
+
+    return square;
+}
+
+
 // RECUPERO IL BUTTON HTML "PLAY" E LO INSERISCO IN UNA CONSTANTE
 const playButton = document.getElementById('play');
 
