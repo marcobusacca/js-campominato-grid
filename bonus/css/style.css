@@ -40,6 +40,21 @@ body{
 
     header button{
         padding: 4px 32px;
+    }
+
+    header label{
+        font-weight: 500;
+    }
+
+    header select{
+        margin-right: 5px;
+        padding: 3px 0;
+        padding-right: 100px;
+        background-color: #F0F0F0;
+    }
+
+    header button,
+    header select{
         border: 1px solid rgb(170, 169, 169);
         border-radius: 5px;
         font-weight: 600;
