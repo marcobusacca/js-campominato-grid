@@ -19,27 +19,22 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 - Usare il comando "document.getElementById('')" per recuperare il Button HTML "play" ed inserirlo in una Constante (playButton);
 
 
-- Dichiarare una Variabile Contatore Click Utente (clickCounter = 0);
-
-
 - QUANDO l'utente clicca sul "playButton":
 
     - Usare il comando "document.getElementById('')" per recuperare il container HTML dove inserire la Griglia composta dagli Square, ed inserirlo in una Constante (grid);
 
-    - Incrementare Variabile "clickCounter";
+    - Ripristino la Griglia = grid.innerHTML = '';
 
-    - ? SE clickCounter === 1 ALLORA:
+    - Dichiarare una Constante che identifica la Size Massima della Griglia (gridSize = 100);
 
-        - Dichiarare una Constante che identifica la Size Massima della Griglia (gridSize = 100);
+    - Creare un Ciclo FOR che scorre da 1 a (gridSize):
 
-        - Creare un Ciclo FOR che scorre da 1 a (gridSize):
+        - Inserire dentro una Constante (square) il richiamo della Funzione (createSquare);
 
-            - Inserire dentro una Constante (square) il richiamo della Funzione (createSquare);
+        - Inserire (InnerText) l'Indice dentro la Constante (square);
 
-            - Inserire (InnerText) l'Indice dentro la Constante (square);
+        - QUANDO l'utente clicca nell'elemento (square):
 
-            - QUANDO l'utente clicca nell'elemento (square):
+            - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
 
-                - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
-
-            - Appendere (append) dentro la Constante (grid) la Constante (square).
+        - Appendere (append) dentro la Constante (grid) la Constante (square).

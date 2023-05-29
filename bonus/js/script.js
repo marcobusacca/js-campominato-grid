@@ -42,9 +42,6 @@ function createHardSquare(){
 // RECUPERO IL BUTTON HTML "PLAY" E LO INSERISCO IN UNA CONSTANTE
 const playButton = document.getElementById('play');
 
-// VARIABILE CONTATORE CLICK UTENTE
-let clickCounter = 0;
-
 
 // L'UTENTE CLICCA SUL "PLAY_BUTTON"
 playButton.addEventListener("click", function(){
@@ -52,97 +49,95 @@ playButton.addEventListener("click", function(){
     // RECUPERO IL CONTAINER HTML "GRID" E LO INSERISCO IN UNA CONSTANTE
     const grid = document.getElementById('grid');
 
+    // RIPRISTINO IL CONTAINER HTML "GRID" ALLA VERSIONE INIZIALE
+    grid.innerHTML = '';
+
     // RECUPERO IL VALORE INSERITO DALL'UTENTE TRAMITE LA DIFFICULT_SELECT HTML
     const difficult = parseInt(document.getElementById('select_difficult').value);
 
     // DICHIARO LA VARIABILE CHE DEFINISCE LA GRANDEZZA TOTALE DELLA GRIGLIA
     let gridSize;
-
-    // INCREMENTO VARIABILE CONTATORE CLICK UTENTE
-    clickCounter++;
     
-    if(clickCounter === 1){ // ANCHE SE L'UTENTE CLICCA PIU VOLTE, IL CICLO VIENE ESEGUITO SOLO UNA VOLTA
-        // CONTROLLO CHE DIFFICOLTA HA SCELTO L'UTENTE
-        switch (difficult){
-            
-            case 1: // L'UTENTE HA SCELTO DIFFICOLTA EASY
+    // CONTROLLO CHE DIFFICOLTA HA SCELTO L'UTENTE
+    switch (difficult){
+        
+        case 1: // L'UTENTE HA SCELTO DIFFICOLTA EASY
 
-                // ASSEGNO LA GRANDEZZA TOTALE DELLA GRIGLIA
-                gridSize = 100;
+            // ASSEGNO LA GRANDEZZA TOTALE DELLA GRIGLIA
+            gridSize = 100;
 
-                // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
-                for (let i = 1; i <= gridSize; i++){
+            // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
+            for (let i = 1; i <= gridSize; i++){
 
-                    // RICHIAMO LA FUNZIONE CREATE_EASY_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
-                    const square = createEasySquare();
+                // RICHIAMO LA FUNZIONE CREATE_EASY_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
+                const square = createEasySquare();
 
-                    // INSERISCO IL NUMERATORE DEI BLOCCHI DELLA GRIGLIA
-                    square.innerText = i;
+                // INSERISCO IL NUMERATORE DEI BLOCCHI DELLA GRIGLIA
+                square.innerText = i;
 
-                    // L'UTENTE CLICCA SU OGNI BLOCCO DELLA GRIGLIA
-                    square.addEventListener("click", function(){
+                // L'UTENTE CLICCA SU OGNI BLOCCO DELLA GRIGLIA
+                square.addEventListener("click", function(){
 
-                        // AGGIUNGO AL BLOCCO CLICCATO LA CLASSE "SQUARE_SELECTED"
-                        this.classList.add('square_selected');
-                    })
+                    // AGGIUNGO AL BLOCCO CLICCATO LA CLASSE "SQUARE_SELECTED"
+                    this.classList.add('square_selected');
+                })
 
-                    // INSERISCO IL CONTENUTO DELLA CONSTANTE SQUARE DENTRO LA CONSTANTE GRID
-                    grid.append(square);
-                }
-            break;
+                // INSERISCO IL CONTENUTO DELLA CONSTANTE SQUARE DENTRO LA CONSTANTE GRID
+                grid.append(square);
+            }
+        break;
 
-            case 2: // L'UTENTE HA SCELTO DIFFICOLTA MEDIUM
+        case 2: // L'UTENTE HA SCELTO DIFFICOLTA MEDIUM
 
-                // ASSEGNO LA GRANDEZZA TOTALE DELLA GRIGLIA
-                gridSize = 81;
+            // ASSEGNO LA GRANDEZZA TOTALE DELLA GRIGLIA
+            gridSize = 81;
 
-                // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
-                for (let i = 1; i <= gridSize; i++){
+            // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
+            for (let i = 1; i <= gridSize; i++){
 
-                    // RICHIAMO LA FUNZIONE CREATE_MEDIUM_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
-                    const square = createMediumSquare();
+                // RICHIAMO LA FUNZIONE CREATE_MEDIUM_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
+                const square = createMediumSquare();
 
-                    // INSERISCO IL NUMERATORE DEI BLOCCHI DELLA GRIGLIA
-                    square.innerText = i;
+                // INSERISCO IL NUMERATORE DEI BLOCCHI DELLA GRIGLIA
+                square.innerText = i;
 
-                    // L'UTENTE CLICCA SU OGNI BLOCCO DELLA GRIGLIA
-                    square.addEventListener("click", function(){
+                // L'UTENTE CLICCA SU OGNI BLOCCO DELLA GRIGLIA
+                square.addEventListener("click", function(){
 
-                        // AGGIUNGO AL BLOCCO CLICCATO LA CLASSE "SQUARE_SELECTED"
-                        this.classList.add('square_selected');
-                    })
+                    // AGGIUNGO AL BLOCCO CLICCATO LA CLASSE "SQUARE_SELECTED"
+                    this.classList.add('square_selected');
+                })
 
-                    // INSERISCO IL CONTENUTO DELLA CONSTANTE SQUARE DENTRO LA CONSTANTE GRID
-                    grid.append(square);
-                }
-            break;
+                // INSERISCO IL CONTENUTO DELLA CONSTANTE SQUARE DENTRO LA CONSTANTE GRID
+                grid.append(square);
+            }
+        break;
 
-            case 3: // L'UTENTE HA SCELTO DIFFICOLTA HARD
+        case 3: // L'UTENTE HA SCELTO DIFFICOLTA HARD
 
-                // ASSEGNO LA GRANDEZZA TOTALE DELLA GRIGLIA
-                gridSize = 49;
+            // ASSEGNO LA GRANDEZZA TOTALE DELLA GRIGLIA
+            gridSize = 49;
 
-                // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
-                for (let i = 1; i <= gridSize; i++){
+            // CICLO FOR CHE CREA TUTTI GLI ELEMENTI DELLA GRIGLIA
+            for (let i = 1; i <= gridSize; i++){
 
-                    // RICHIAMO LA FUNZIONE CREATE_HARD_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
-                    const square = createHardSquare();
+                // RICHIAMO LA FUNZIONE CREATE_HARD_SQUARE E LA INSERISCO DENTRO UNA CONSTANTE
+                const square = createHardSquare();
 
-                    // INSERISCO IL NUMERATORE DEI BLOCCHI DELLA GRIGLIA
-                    square.innerText = i;
+                // INSERISCO IL NUMERATORE DEI BLOCCHI DELLA GRIGLIA
+                square.innerText = i;
 
-                    // L'UTENTE CLICCA SU OGNI BLOCCO DELLA GRIGLIA
-                    square.addEventListener("click", function(){
+                // L'UTENTE CLICCA SU OGNI BLOCCO DELLA GRIGLIA
+                square.addEventListener("click", function(){
 
-                        // AGGIUNGO AL BLOCCO CLICCATO LA CLASSE "SQUARE_SELECTED"
-                        this.classList.add('square_selected');
-                    })
+                    // AGGIUNGO AL BLOCCO CLICCATO LA CLASSE "SQUARE_SELECTED"
+                    this.classList.add('square_selected');
+                })
 
-                    // INSERISCO IL CONTENUTO DELLA CONSTANTE SQUARE DENTRO LA CONSTANTE GRID
-                    grid.append(square);
-                }
-            break;
-        }
+                // INSERISCO IL CONTENUTO DELLA CONSTANTE SQUARE DENTRO LA CONSTANTE GRID
+                grid.append(square);
+            }
+        break;
     }
 })
 

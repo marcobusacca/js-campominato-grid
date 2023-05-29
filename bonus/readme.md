@@ -44,75 +44,70 @@ Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed 
 - Usare il comando "document.getElementById('')" per recuperare il Button HTML "play" ed inserirlo in una Constante (playButton);
 
 
-- Dichiarare una Variabile Contatore Click Utente (clickCounter = 0);
-
-
 - QUANDO l'utente clicca sul "playButton":
 
     - Usare il comando "document.getElementById('')" per recuperare il container HTML dove inserire la Griglia composta dagli Square, ed inserirlo in una Constante (grid);
+
+    - Ripristino la Griglia = grid.innerHTML = '';
 
     - Usare il comando "parseInt(document.getElementById('').value)" per recuperare la select HTML dove l'utente ha scelto la Difficoltà, ed inserirla in una Constante (difficult);
 
     - Dichiarare una Variabile che Definisce la Grandezza Totale della Griglia (gridSize);
 
-    - Incrementare Variabile "clickCounter";
+    - ? switch (difficult):
 
-    - ? SE clickCounter === 1 ALLORA:
+        - case 1 : // L'utente ha scelto Difficoltà Easy
 
-        - ? switch (difficult):
+            - Assegnare la Grandezza Totale della Griglia in Difficoltà Easy (gridSize = 100);
 
-            - case 1 : // L'utente ha scelto Difficoltà Easy
+            - Creare un Ciclo FOR che scorre da 1 a (gridSize):
 
-                - Assegnare la Grandezza Totale della Griglia in Difficoltà Easy (gridSize = 100);
+                - Inserire dentro una Constante (square) il richiamo della Funzione (createEasySquare);
 
-                - Creare un Ciclo FOR che scorre da 1 a (gridSize):
+                - Inserire (InnerText) l'Indice dentro la Constante (square);
 
-                    - Inserire dentro una Constante (square) il richiamo della Funzione (createEasySquare);
+                - QUANDO l'utente clicca nell'elemento (square):
 
-                    - Inserire (InnerText) l'Indice dentro la Constante (square);
+                    - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
 
-                    - QUANDO l'utente clicca nell'elemento (square):
+                - Appendere (append) dentro la Constante (grid) la Constante (square).
 
-                        - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
-
-                    - Appendere (append) dentro la Constante (grid) la Constante (square).
-
-            - break;
+        - break;
 
 
-            - case 2 : // L'utente ha scelto Difficoltà Medium
+        - case 2 : // L'utente ha scelto Difficoltà Medium
 
-                - Assegnare la Grandezza Totale della Griglia in Difficoltà Easy (gridSize = 81);
+            - Assegnare la Grandezza Totale della Griglia in Difficoltà Easy (gridSize = 81);
 
-                - Creare un Ciclo FOR che scorre da 1 a (gridSize):
+            - Creare un Ciclo FOR che scorre da 1 a (gridSize):
 
-                    - Inserire dentro una Constante (square) il richiamo della Funzione (createMediumSquare);
+                - Inserire dentro una Constante (square) il richiamo della Funzione (createMediumSquare);
 
-                    - Inserire (InnerText) l'Indice dentro la Constante (square);
+                - Inserire (InnerText) l'Indice dentro la Constante (square);
 
-                    - QUANDO l'utente clicca nell'elemento (square):
+                - QUANDO l'utente clicca nell'elemento (square):
 
-                        - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
+                    - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
 
-                    - Appendere (append) dentro la Constante (grid) la Constante (square).
+                - Appendere (append) dentro la Constante (grid) la Constante (square).
 
-            - break;
+        - break;
 
 
-            - case 3 : // L'utente ha scelto Difficoltà Hard
+        - case 3 : // L'utente ha scelto Difficoltà Hard
 
-                - Assegnare la Grandezza Totale della Griglia in Difficoltà Easy (gridSize = 49);
+            - Assegnare la Grandezza Totale della Griglia in Difficoltà Easy (gridSize = 49);
 
-                - Creare un Ciclo FOR che scorre da 1 a (gridSize):
+            - Creare un Ciclo FOR che scorre da 1 a (gridSize):
 
-                    - Inserire dentro una Constante (square) il richiamo della Funzione (createHardSquare);
+                - Inserire dentro una Constante (square) il richiamo della Funzione (createHardSquare);
 
-                    - Inserire (InnerText) l'Indice dentro la Constante (square);
+                - Inserire (InnerText) l'Indice dentro la Constante (square);
 
-                    - QUANDO l'utente clicca nell'elemento (square):
+                - QUANDO l'utente clicca nell'elemento (square):
 
-                        - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
+                    - Aggiungere all'elemento di ogni iterazione (square === this), la Classe che lo colorerà di Azzurro;
 
-                    - Appendere (append) dentro la Constante (grid) la Constante (square).
+                - Appendere (append) dentro la Constante (grid) la Constante (square).
 
-            - break;
+        - break;
